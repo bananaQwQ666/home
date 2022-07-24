@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蕉小拿の主页</title>
+    <meta name="keywords" content="蕉小拿,蕉小拿主页">
+    <meta name="description" content="这里是蕉小拿的个人主页">
+    <meta name="author" content="蕉小拿">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="./assets/js/jQuery3.5.1.js"></script>
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    
+</head>
+
+<body>
+<div id="aplayer" class="aplayer" data-order="random" data-id="6862329349" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.5"></div>
+    <!-- aplayer -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <!-- 头部 -->
+    <header class="core hd">
+        <!-- 时间 -->
+        <h1 class="time_econd"></span></h1>
+        <h3><span class="time_moon"></span>&nbsp;&nbsp;<span id="clock"></span>&#128513;</h3>
+        <!-- 搜索栏 -->
+        <div class="xf_baidu xf_style">
+            <form action="http://www.baidu.com/baidu" target="_blank">
+                <i></i>
+                <input type="text" name="word" size="30" autocomplete="off" placeholder="百度一下">
+                <input type="submit">
+            </form>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <section class="core main xf_style">
+        <!-- 头像 -->
+        <div class="tx">
+            <!-- https://q1.qlogo.cn/g?b=qq&nk=1809185784&s=100 -->
+            <img src="./assets/images/favicon.png" alt="摸摸蕉小拿的脑袋" title="摸摸蕉小拿的脑袋">
+        </div>
+        <!-- 姓名 个签 -->
+        <div class="xf_name">
+            <h2>蕉小拿</h2>
+            <h4 id="xf_txt"></h4>
+        </div>
+        <!-- 图标 （img里面的是透明图是用来转换超链接） -->
+        <div class="xf_ico_link">
+            <ul>
+                <li><a href="https://www.douyin.com/user/MS4wLjABAAAA1moiWd1pWXhGtGTYWxFliTUpO0x8ihWWzCIHP564orM" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="抖音" title="抖音"></a></li>
+                <li><a href="https://wpa.qq.com/msgrd?v=3&uin=2982909597&site=qq&menu=yes" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="QQ" title="QQ"></a></li>
+                <li><a href="mailto:bananaqwq@hotmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="邮箱" title="邮箱"></a></li>
+                <li><a href="https://space.bilibili.com/436928745" target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png"
+                            alt="bilibili" title="bilibili"></a></li>
+            </ul>
+        </div>
+        <!-- 介绍 -->
+        <div class="xf_introduce">
+            <p id="xf_type"></p>
+        </div>
+        <!-- 滑动效果 -->
+        <p class="xf_slide">&#xeb6d;</p>
+        <div class="xf_website">
+            <a href="https://blog.bananaqwq.top" target="_blank" rel="noopener noreferrer">博客</a>
+            <a href="https://oat.bcserver.top" target="_blank" rel="noopener noreferrer">原始与科技</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">暂无</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">暂无</a>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="core copy">
+        <p>Copyright © 2022 <a href="" target="_blank" rel="noopener noreferrer">蕉小拿</a> 版权所有</p>
+        <p>原作者 小枫</p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".xf_slide").click(function () {
+                $(".xf_website").slideToggle("slow");
+            })
+        })
+    </script>
+    <script src="./assets/js/time.js"></script>
+    <script src="./assets/js/text.js"></script>
+    <script src="./assets/js/fireworks.js"></script>
+    <!--看板娘-->
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 60,
+            "height": 120,
+            "hOffset": 0,
+            "vOffset": -50
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.1
+        },
+        "react": {
+            "opacityDefault": 1,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+<script>
+    $(".live2d-widget").mouseenter(function (e) {
+        $(this).html("<p>cs</p>");
+    });
+</script>
+</body>
+
+</html>
