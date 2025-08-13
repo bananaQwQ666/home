@@ -4,7 +4,7 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 let divTyping = document.getElementById('xf_type')
 let i = 0,
     timer = 0,
-    str = '一个正在努力学习的初中生，热爱游戏、学习和钢琴，男孩纸，爱发电https://afdian.net/@JiaoXiaoNa' 
+    str = '一个正在努力学习的高中生，热爱游戏、学习和钢琴，男孩纸，爱发电https://afdian.net/@JiaoXiaoNa' 
 function typing() {
     if (i <= str.length) {
         divTyping.innerHTML = str.slice(0, i++) + '_'
@@ -60,3 +60,4 @@ var binft = function (r) {
     i()
 };
 binft(document.getElementById('xf_txt'));
+
